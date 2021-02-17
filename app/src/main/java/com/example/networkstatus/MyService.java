@@ -54,8 +54,7 @@ public class MyService extends Service {
             PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, intent, 0);
             NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext());
             NotificationCompat.BigTextStyle bigTextStyle = new NotificationCompat.BigTextStyle();
-            bigTextStyle.setBigContentTitle("Music player implemented by foreground service.");
-            bigTextStyle.bigText("Android foreground service is a android service which can run in foreground always, it can be controlled by user via notification.");
+            bigTextStyle.setBigContentTitle("");
             builder.setStyle(bigTextStyle);
             builder.setWhen(System.currentTimeMillis());
             builder.setSmallIcon(R.mipmap.ic_launcher);
